@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context=".ActivityWalkThrow1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/Intern"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/secondary"
+        />
+  <LinearLayout
+      android:layout_width="match_parent"
+
+      android:layout_height="wrap_content">
+
+
+      <ImageView
+          android:id="@+id/walk1"
+          android:layout_width="140dp"
+          android:layout_height="105dp"
+          android:layout_marginStart="10dp"
+          android:padding="10dp"
+          android:contentDescription="right"
+          android:src="@drawable/ic_baseline_arrow_right_alt_24" />
+
+      <ImageView
+          android:layout_width="150dp"
+          android:src="@drawable/dots1"
+          android:layout_marginLeft="100dp"
+          android:layout_gravity="right"
+          android:contentDescription="dot1"
+          android:layout_height="wrap_content"/>
+  </LinearLayout>
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="wrap_content"
+    app:lottie_fileName="training.json"
+    app:lottie_autoPlay="true"
+    android:contentDescription="train"
+    app:lottie_loop="true"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
